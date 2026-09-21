@@ -53,9 +53,11 @@ class CalculatriceAvecHistoriqueTest {
     @Test
     void additionnerEnregistreUneEntreeDansLeJournal() {
         // TODO: Act
+        int resultat = calculatrice.additionner(2, 3);
         // Appelez calculatrice.additionner(2, 3)
 
         // TODO: Assert
+        assertEquals(5, resultat);
         // Utilisez verify(journalMock).enregistrer(...) pour vérifier qu'un message a bien
         // été enregistré. Astuce : vous pouvez vérifier le message exact attendu :
         // verify(journalMock).enregistrer("2 + 3 = 5");

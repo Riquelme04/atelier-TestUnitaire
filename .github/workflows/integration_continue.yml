@@ -4,6 +4,7 @@ name: Compilation du projet atelier-test-unitaires
 #Le on spécifie à quel moment le workflow doit s'exécuter. Ici, on le déclenche à chaque fois qu'il y a un push sur la branche main.
 on:
   push:
+  workflow_dispatch: #manuel
 #Création de nos jobs
 jobs:
   compilation: #Nom du premier job qui s'execute sur un runner Ubuntu
